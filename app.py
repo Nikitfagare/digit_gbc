@@ -9,7 +9,7 @@ from streamlit_drawable_canvas import st_canvas
 # ------------------------------
 @st.cache_resource
 def load_model():
-    with open("digit_model.pkl", "rb") as f:
+    with open("digits_model.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
